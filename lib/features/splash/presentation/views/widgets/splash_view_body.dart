@@ -1,4 +1,5 @@
 import 'package:bookly_app/core/utils/assets_data.dart';
+import 'package:bookly_app/features/splash/presentation/views/widgets/custom_animated_container.dart';
 import 'package:flutter/material.dart';
 
 class SplashViewBody extends StatelessWidget {
@@ -15,20 +16,7 @@ class SplashViewBody extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          Container(
-            decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
-            child: const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 12),
-              child: Text(
-                "Enjoy with reading Free Books",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.italic,
-                    fontSize: 15),
-              ),
-            ),
-          )
+          const CustomAnimatedContainer(),
         ],
       ),
     );
