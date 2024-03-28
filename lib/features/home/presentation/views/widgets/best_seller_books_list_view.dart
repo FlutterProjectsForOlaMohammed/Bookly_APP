@@ -7,9 +7,10 @@ class BestSellerBooksListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverList.builder(
-        itemCount: 10,
-        itemBuilder: (context, index) {
-          return const BestSellerBookItem();
-        });
+      itemCount: 10,
+      itemBuilder: (context, index) {
+        return const BestSellerBookItem();
+      },
+    );
   }
 }
