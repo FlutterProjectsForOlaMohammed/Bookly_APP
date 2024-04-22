@@ -16,11 +16,11 @@ abstract class Styles {
   );
   static const textStyle20 = TextStyle(
     fontSize: 20,
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.w900,
   );
   static const textStyle30 = TextStyle(
     fontSize: 30,
     fontFamily: kGTSectraFine,
-    fontWeight: FontWeight.normal,
+    fontWeight: FontWeight.w600,
   );
 }

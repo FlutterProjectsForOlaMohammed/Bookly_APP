@@ -19,14 +19,15 @@ class PriceAndRating extends StatelessWidget {
           Icons.star_rounded,
           color: Color.fromRGBO(255, 235, 59, 1),
         ),
-        const Text(
+        Text(
           " 4.8",
-          style: Styles.textStyle16,
+          style: Styles.textStyle16.copyWith(fontWeight: FontWeight.w600),
         ),
         Text(
           " (2039)",
-          style:
-              Styles.textStyle14.copyWith(color: Colors.white.withOpacity(0.5)),
+          style: Styles.textStyle14.copyWith(
+              color: Colors.white.withOpacity(0.5),
+              fontWeight: FontWeight.w600),
         ),
       ],
     );

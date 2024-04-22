@@ -6,18 +6,16 @@ class BestSellerBookImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(right: 16),
-      child: AspectRatio(
-        aspectRatio: 2.6 / 4,
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8),
-            color: Colors.grey,
-            image: const DecorationImage(
-              fit: BoxFit.fill,
-              image: AssetImage(AssetData.test),
-            ),
+    return AspectRatio(
+      aspectRatio: 70 / 105,
+      child: Container(
+        padding: EdgeInsets.zero,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+          color: Colors.grey,
+          image: const DecorationImage(
+            fit: BoxFit.fill,
+            image: AssetImage(AssetData.test),
           ),
         ),
       ),
