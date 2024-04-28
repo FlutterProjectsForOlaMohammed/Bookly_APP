@@ -28,15 +28,22 @@ class PreviewRow extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            height: MediaQuery.of(context).size.height * (48 / 812),
-            width: MediaQuery.of(context).size.width * (150 / 375),
-            alignment: Alignment.center,
-            decoration: const BoxDecoration(
-                color: Color(0xffEF8262),
+          TextButton(
+            style: TextButton.styleFrom(
+              shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(15),
-                    bottomRight: Radius.circular(15))),
+                  topRight: Radius.circular(15),
+                  bottomRight: Radius.circular(15),
+                ),
+              ),
+              backgroundColor: const Color(0xffEF8262),
+              alignment: Alignment.center,
+              fixedSize: Size(
+                MediaQuery.of(context).size.width * (150 / 375),
+                MediaQuery.of(context).size.height * (48 / 812),
+              ),
+            ),
+            onPressed: () {},
             child: Text(
               "Free Preview",
               style: Styles.textStyle16
